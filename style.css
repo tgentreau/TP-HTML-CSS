@@ -1,0 +1,81 @@
+:root {
+    --bcg-color: #0B1D26;
+    --txt-color: #fff;
+    --orange: #FBD787;
+} 
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("/font/Gilroy-FREE/Gilroy-Light.otf");
+}
+
+@font-face {
+    font-family: "Chronicle";
+    src: url("/font/Chronicle\ Display\ Light\ Italic.otf");
+}
+
+body {
+    background: var(--bcg-color);
+    color: var(--txt-color);
+    font-family: "Gilroy";
+}
+
+/*****HEADER*****/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav li {
+    margin-right: 25%;
+}
+
+.mntn {
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+/****CONTENT****/
+
+
+.img {
+    width: 566px;
+    height: 720px;
+}
+
+.container-basic {
+    display: flex;
+    gap: 20%;
+    margin: 10%;
+}
+
+.container-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20%;
+    margin: 10%;
+}
+
+/****FOOTER****/
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 10%;
+}
