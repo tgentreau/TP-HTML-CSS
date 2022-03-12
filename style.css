@@ -1,5 +1,5 @@
 :root {
-    --bcg-color: #0B1D26;
+    --bcg-color: #0A1C25;
     --txt-color: #fff;
     --orange: #FBD787;
 } 
@@ -10,27 +10,65 @@ a {
 }
 
 @font-face {
-    font-family: "Gilroy";
-    src: url("/font/Gilroy-FREE/Gilroy-Light.otf");
+    font-family: "Gilroy1";
+    src: url("font/Gilroy-Light.woff") format("woff");
 }
 
 @font-face {
     font-family: "Chronicle";
-    src: url("/font/Chronicle\ Display\ Light\ Italic.otf");
+    src: url("font/Chronicle\ Display\ Roman.woff") format("woff");
 }
 
 body {
-    background: var(--bcg-color);
     color: var(--txt-color);
-    font-family: "Gilroy";
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("/img/background.jpg");
+    background-repeat: no-repeat;
+    background-color: var(--bcg-color);
+}
+
+/****ALL****/
+
+.mntn, .y-title {
+    text-transform: uppercase;
+}
+
+.mntn {
+    font-family: "Chronicle";
+    font-size: 32px;
+}
+
+.y-title, .y-read, h3, .fa-arrow-right-long{
+    font-family: "Gilroy1";
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.title h1, #main h2 {
+    font-family: "Chronicle";
 }
 
 /*****HEADER*****/
 
+header {
+    height: 140vh;
+    width: 100%;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 5%;
+    align-items: center;
+    margin: 0 5% 5% 5%;
+    padding-top: 5%;
+}
+
+.header .nav, .header div, .follow, .start, .title span, .paragraph, .l-foot, .m-foot, .r-foot {
+    font-family: "Gilroy1";
 }
 
 .nav {
@@ -39,10 +77,31 @@ body {
 
 .nav li {
     margin-right: 25%;
+    white-space: nowrap;
 }
 
-.mntn {
-    text-transform: uppercase;
+.nav ul {
+    width: 20%;
+}
+
+.title {
+    width: 64%;
+    margin-left: 20%;
+}
+
+
+.title h1 {
+    font-size: 88px;
+    margin: 32px 0;
+}
+
+.title .tgtu, .wrap .tgtu {
+    display: flex;
+    align-items: center;
+}
+
+.tgtu .ligne {
+    margin-right: 2%;
 }
 
 .wrapper {
@@ -51,7 +110,25 @@ body {
     margin: 5%;
 }
 
-/****CONTENT****/
+.social, .start {
+    margin-top: 5%;
+}
+
+.social ul li, .start ul li {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.social .follow {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.fa-user {
+    margin-right: 10px;
+}
+
+/****MAIN****/
 
 
 .img {
@@ -72,10 +149,62 @@ body {
     margin: 10%;
 }
 
+.paragraph {
+    margin-top: 2%;
+}
+
+.paragraph h2 {
+    margin: 5% 0 5% 0;
+    font-size: 64px;
+}
+
+.paragraph p {
+    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 5%;
+}
+
+.ligne {
+    width: 78px;
+    height: 2px;
+    background: var(--orange);
+    border-radius: 5%;
+}
+
+.number {
+    font-size: 240px;
+    opacity: .25;
+    position: absolute;
+}
+
+.wrap {
+    position: relative;
+    top: 120px;
+    left: 119px;
+}
+
 /****FOOTER****/
 
 .foot {
     display: flex;
     justify-content: space-between;
-    margin: 10%;
+    margin: 10% 10% 5% 10%;
+}
+
+.foot h3 {
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.l-foot .copy {
+    color: #608492;
+}
+
+.m-foot li, .r-foot li {
+    margin-bottom: 24px;
+}
+
+.l-foot p {
+    width: 60%;
+    margin: 24px 0 122px 0;
 }
