@@ -153,8 +153,7 @@ header {
 
 
 .img {
-    width: 566px;
-    height: 720px;
+    width: 100%;
 }
 
 .container-basic {
@@ -434,12 +433,6 @@ header {
 
     .ligne {
         width: 7%;
-    }
-
-    .img {
-        margin: 8% 15%;
-        width: 300px;
-        height: 400px;
     }
 
     .foot {
